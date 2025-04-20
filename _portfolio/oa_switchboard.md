@@ -2,7 +2,7 @@
 title: OA Switchboard
 subtitle: Plugin para envio de mensagens P1-PIO para o OA Switchboard
 image: assets/img/portfolio/03-full.jpg
-alt: 
+alt: Plugin para envio de mensagens P1-PIO para o OA Switchboard
 
 caption:
   title: OA Switchboard

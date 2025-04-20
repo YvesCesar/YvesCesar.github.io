@@ -2,7 +2,7 @@
 title: Lembrete para Avaliadores
 subtitle: Plugin para OJS que envia um lembrete para o endereço de e-mail do avaliador
 image: assets/img/portfolio/05-full.jpg
-alt: 
+alt: Plugin OJS para envio de lembretes de período de avaliação
 
 caption:
   title: Lembrete para Avaliadores

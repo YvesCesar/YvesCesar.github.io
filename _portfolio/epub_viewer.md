@@ -2,7 +2,7 @@
 title: Visualizador de EPUBs
 subtitle: Permite a visualização de arquivos EPUB no OJS
 image: assets/img/portfolio/04-full.jpg
-alt: 
+alt: Plugin que permite a visualização de arquivos EPUB no OJS
 
 caption:
   title: Visualizador de EPUBs
