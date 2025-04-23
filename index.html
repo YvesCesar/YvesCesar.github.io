@@ -58,6 +58,36 @@
         border-right: 3px solid #1f6f8b;
       }
     }
+
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      background: #1f6f8b;
+      padding: 10px 0;
+      color: white;
+      font-weight: bold;
+      font-size: 21px;
+    }
+
+    .marquee-content {
+      display: inline-block;
+      animation: marquee 33s linear infinite;
+    }
+
+    .marquee-content span {
+      display: inline-block;
+      padding-right: 20px;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(-100);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
    </style>
 
   <script>
@@ -101,7 +131,6 @@
       typeWrite();
     });
   </script>
-  
 </head>
 
 
@@ -175,6 +204,73 @@
     </div>
   </header>
   
+  <div class="marquee-container">
+    <div class="marquee-content primary">
+      <span>/</span>
+      <span>PHP</span>
+      <span>/</span>
+      <span>Ruby On Rails</span>
+      <span>/</span>
+      <span>JavaScript</span>
+      <span>/</span>
+      <span>Python</span>
+      <span>/</span>
+      <span>MySQL</span>
+      <span>/</span>
+      <span>PostgreSQL</span>
+      <span>/</span>
+      <span>TailwindCSS</span>
+      <span>/</span>
+      <span>Bootstrap</span>
+      <span>/</span>
+      <span>Docker</span>
+      <span>/</span>
+      <span>GIT</span>
+      <span>/</span>
+      <span>GitHub</span>
+      <span>/</span>
+      <span>GitLab</span>
+      <span>/</span>
+      <span>CI/CD</span>
+      <span>/</span>
+      <span>HTML</span>
+      <span>/</span>
+      <span>CSS</span>
+    </div>
+
+    <div class="marquee-content secondary">
+      <span>/</span>
+      <span>PHP</span>
+      <span>/</span>
+      <span>Ruby On Rails</span>
+      <span>/</span>
+      <span>JavaScript</span>
+      <span>/</span>
+      <span>Python</span>
+      <span>/</span>
+      <span>MySQL</span>
+      <span>/</span>
+      <span>PostgreSQL</span>
+      <span>/</span>
+      <span>TailwindCSS</span>
+      <span>/</span>
+      <span>Bootstrap</span>
+      <span>/</span>
+      <span>Docker</span>
+      <span>/</span>
+      <span>GIT</span>
+      <span>/</span>
+      <span>GitHub</span>
+      <span>/</span>
+      <span>GitLab</span>
+      <span>/</span>
+      <span>CI/CD</span>
+      <span>/</span>
+      <span>HTML</span>
+      <span>/</span>
+      <span>CSS</span>
+    </div>
+  </div>
   <!-- End Header -->
 
 <!-- Services -->
