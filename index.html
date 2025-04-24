@@ -274,49 +274,187 @@
   <!-- End Header -->
 
 <!-- Services -->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700');
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
-  <section class="page-section" id="services">
-    <div class="container">
-	
-      <div class="row">
+    .gr-1 {
+        background: #1f6f8b;
+    }
+    .gr-2 {
+        background: #1f6f8b;
+    }
+    .gr-3 {
+        background: #1f6f8b;
+    }
+
+    * {
+        transition: .5s;
+    }
+
+    .h-100 {
+        height: 100vh !important;
+    }
+
+    .align-middle {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .column {
+        margin-top: 3rem;
+        padding-left: 3rem;
+    }
+
+    .column:hover {
+        padding-left: 0;
+    }
+
+    .column:hover .card .txt {
+        margin-left: 1rem;
+    }
+
+    .column:hover .card .txt h1,
+    .column:hover .card .txt p {
+        color: rgba(255,255,255,1);
+        opacity: 1;
+    }
+
+    .column:hover a {
+        color: rgba(255,255,255,1);
+    }
+
+    .column:hover a:after {
+        width: 10%;
+    }
+
+    .card {
+        min-height: 170px;
+        margin: 0;
+        padding: 1.7rem 1.2rem;
+        border: none;
+        border-radius: 0;
+        color: white;
+        letter-spacing: .05rem;
+        box-shadow: 0 0 21px rgba(0,0,0,.27);
+        border-radius: 10px;
+    }
+
+    .card .txt {
+        margin-left: -3rem;
+        z-index: 1;
+    }
+
+    .card .txt h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .card .txt p {
+        font-size: .7rem;
+        letter-spacing: 0;
+        margin-top: 33px;
+        opacity: 0;
+        color: rgba(255,255,255,1);
+    }
+
+    .card a {
+        z-index: 3;
+        font-size: .7rem;
+        color: white;
+        margin-left: 1rem;
+        position: relative;
+        bottom: -.5rem;
+        text-transform: uppercase;
+    }
+
+    .card a:after {
+        content: "";
+        display: inline-block;
+        height: 0.5em;
+        width: 0;
+        margin-right: -100%;
+        margin-left: 10px;
+        border-top: 1px solid rgba(255,255,255,1);
+        transition: .5s;
+    }
+
+    .card .ico-card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .card i {
+        position: relative;
+        right: -50%;
+        top: 60%;
+        font-size: 12rem;
+        line-height: 0;
+        opacity: .2;
+        color: rgba(255,255,255,1);
+        z-index: 0;
+    }
+  </style>
+  <div style="background-image: url('assets/img/features_section_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 46rem;"
+  >
+    <div class="container h-100">
+      <div class="row align-middle">
         <div class="col-lg-12 text-center pb-5">
-          <h2 class="section-heading text-uppercase">Serviços</h2>
+          <h2 class="section-heading text-uppercase text-white">Serviços</h2>
         </div>
+        <div class="col-md-6 col-lg-4 column">
+          <div class="card gr-1">
+            <div class="txt">
+              <h1>Aplicações Web</h1>
+              <p>Desenvolvimento de sites, serviços, aplicações voltadas para Web.</p>
+            </div>
+            <a href="#">Saiba mais</a>
+            <div class="ico-card">
+            <i class="fa fa-rebel"></i>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 column">
+          <div class="card gr-2">
+            <div class="txt">
+              <h1>Automatização <br>de processos</h1>
+              <p>Ambientes de desenvolvimento, testes de unidade e integração, CI/CD para GitHub e GitLab.</p>
+            </div>
+            <a href="#">Saiba mais</a>
+          <div class="ico-card">
+            <i class="fa fa-codepen"></i>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 column">
+          <div class="card gr-3">
+            <div class="txt">
+              <h1>Plugins OJS/OPS/OMP</h1>
+              <p>Desenvolvimento de plugins para aplicações PKP, utilizadas em instituições acadêmicas no mundo todo.</p>
+            </div>
+            <a href="#">Saiba mais</a>
+          <div class="ico-card">
+            <i class="fa fa-empire"></i>
+          </div>
+          </div>
+        </div>
+        
       </div>
-	  
-      <div class="row text-center">
-	  
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading"><p>Aplicações Web</p></h4>
-          <div class="text-muted"><p>Desenvolvimento de sites, serviços, aplicações voltadas para Web.</p></div>
-        </div>
-	  
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading"><p>Automatização de processos</p></h4>
-          <div class="text-muted"><p>Ambientes de desenvolvimento, testes de unidade e integração, CI/CD para GitHub e GitLab.</p></div>
-        </div>
-	  
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fab fa-markdown fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading"><p>Plugins OJS/OPS/OMP</p></h4>
-          <div class="text-muted"><p>Desenvolvimento de plugins para aplicações PKP, utilizadas em instituições acadêmicas no mundo todo.</p></div>
-        </div>
-	  
-      </div>
-	  
     </div>
-  </section>
+  </div>
 
 <!-- End Services -->
 <!-- Portfolio Grid -->
