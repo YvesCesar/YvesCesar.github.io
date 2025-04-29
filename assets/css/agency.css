@@ -80,7 +80,7 @@ img::-moz-selection {
 
 .btn-primary {
   background-color: #1f6f8b;
-  border-color: white;
+  border-color: #1f6f8b;
 }
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
   background-color: white;
