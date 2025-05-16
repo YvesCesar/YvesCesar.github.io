@@ -259,6 +259,19 @@ header.masthead .intro-text .intro-heading {
   font-family: 'Space Grotesk', sans-serif;
 }
 
+@media (max-width: 575.98px) {
+  header.masthead .intro-text  {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  header.masthead .intro-text, .developer-skill-title {
+    font-size: 18px !important;
+  }
+  .download-resume-button, #sendMessageButton {
+      margin-top: 4rem !important;
+  }
+}
+
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
