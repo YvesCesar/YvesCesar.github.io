@@ -190,6 +190,18 @@ img::-moz-selection {
   border-bottom: 6px solid #1f6f8b;
 }
 
+.navbar-toggler .fas {
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler[aria-expanded="true"] .fas.fa-bars {
+  transform: rotate(90deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .fas.fa-bars::before {
+  content: "\f00d";
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 25px;
