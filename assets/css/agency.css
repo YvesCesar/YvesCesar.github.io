@@ -166,7 +166,6 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #1f6f8b;
   font-family: 'Space Grotesk', sans-serif;
 }
 #mainNav .navbar-brand {
@@ -262,6 +261,7 @@ header.masthead .intro-text .intro-heading {
 @media (max-width: 575.98px) {
   header.masthead {
     background-position: 70%;
+    margin-top: 3rem;
   }
 
   header.masthead .intro-text  {
@@ -270,7 +270,7 @@ header.masthead .intro-text .intro-heading {
   }
 
   header.masthead .intro-text, .developer-skill-title {
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
 
   .download-resume-button, #sendMessageButton {
@@ -281,7 +281,11 @@ header.masthead .intro-text .intro-heading {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .marquee-container {
+    font-size: 16px !important;
   }
 }
 
