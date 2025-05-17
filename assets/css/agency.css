@@ -264,11 +264,20 @@ header.masthead .intro-text .intro-heading {
     padding-top: 100px;
     padding-bottom: 50px;
   }
+
   header.masthead .intro-text, .developer-skill-title {
     font-size: 18px !important;
   }
+
   .download-resume-button, #sendMessageButton {
       margin-top: 4rem !important;
+  }
+
+  header.masthead ul.social-buttons li a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
   }
 }
 
