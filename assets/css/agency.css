@@ -260,6 +260,10 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (max-width: 575.98px) {
+  header.masthead {
+    background-position: 70%;
+  }
+
   header.masthead .intro-text  {
     padding-top: 100px;
     padding-bottom: 50px;
