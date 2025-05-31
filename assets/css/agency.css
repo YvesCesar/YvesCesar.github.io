@@ -777,4 +777,13 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   background-color: #1f6f8b;
 }
 
+@media (max-width: 575.98px) {
+  #aboutMeCarousel {
+    width: 20rem !important;
+  }
+  #aboutMeCarousel .carousel-inner .carousel-item img  {
+    width: 20rem !important;
+  }
+}
+
 /*# sourceMappingURL=agency.css.map */
