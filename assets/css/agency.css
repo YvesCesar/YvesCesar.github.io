@@ -324,6 +324,72 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 50px;
     font-family: 'Space Grotesk', sans-serif;
   }
+
+  .download-resume-button, #sendMessageButton {
+    margin-top: 3rem !important;
+  }
+
+  #services .services-content .row {
+    padding-bottom: 8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+  header.masthead {
+    height: 33.2rem;
+  }
+
+  header.masthead .intro-text {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  header.masthead .intro-text div,
+  header.masthead .intro-text p,
+  .developer-skill-title {
+    font-size: 25px !important;
+  }
+
+  header.masthead .intro-text .intro-lead-in {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 25px;
+  }
+
+  header.masthead .intro-text .intro-heading {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  header.masthead {
+    height: 33.2rem;
+  }
+
+  header.masthead .intro-text {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  header.masthead .intro-text div,
+  header.masthead .intro-text p,
+  .developer-skill-title {
+    font-size: 25px !important;
+  }
+
+  header.masthead .intro-text .intro-lead-in {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 25px;
+  }
+
+  header.masthead .intro-text .intro-heading {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 25px;
+  }
 }
 .service-heading {
   margin: 15px 0;
