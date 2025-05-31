@@ -117,7 +117,6 @@ body {
 
 @media (max-width: 575.98px) {
   .portfolio-modal .modal-content {
-    margin: 20px;
     padding: 40px 20px;
   }
   
@@ -186,7 +185,6 @@ body {
 @media (max-width: 575.98px) {
   .portfolio-modal .modal-content ul.list-inline li:last-child {
     gap: 0.3rem;
-    justify-content: center;
   }
   
   .portfolio-modal .modal-content ul.list-inline li span {
@@ -483,10 +481,6 @@ header.masthead .intro-text .intro-heading {
     font-family: 'Space Grotesk', sans-serif;
   }
 
-  .download-resume-button, #sendMessageButton {
-    margin-top: 3rem !important;
-  }
-
   #services .services-content .row {
     padding-bottom: 8rem;
   }
@@ -518,6 +512,10 @@ header.masthead .intro-text .intro-heading {
     font-size: 25px;
     line-height: 25px;
     margin-bottom: 25px;
+  }
+
+  .download-resume-button, #sendMessageButton {
+    margin-top: 3rem !important;
   }
 }
 
