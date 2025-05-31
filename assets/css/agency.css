@@ -517,6 +517,11 @@ header.masthead .intro-text .intro-heading {
   .download-resume-button, #sendMessageButton {
     margin-top: 3rem !important;
   }
+
+  .portfolio-modal .modal-dialog {
+    max-width: 80vw !important;
+  }
+  
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
