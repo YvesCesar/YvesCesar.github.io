@@ -387,6 +387,11 @@
     opacity: 1;
   }
 
+  .column:hover .card span {
+    opacity: 0;
+    visibility: hidden;
+  }
+
   .column:hover a {
     color: rgba(255,255,255,1);
   }
@@ -423,6 +428,7 @@
     margin-top: 33px;
     opacity: 0;
     color: rgba(255,255,255,1);
+    transition: opacity 0.5s ease;
   }
 
   .card span {
@@ -433,6 +439,9 @@
     position: relative;
     bottom: -.5rem;
     text-transform: uppercase;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
   }
 
   .card span:after {
@@ -496,70 +505,75 @@
     display: block;
   }
 
-@media (max-width: 575.98px) {
-  .services-content {
-    padding: 2rem 0;
-  }
+  @media (max-width: 575.98px) {
+    .services-content {
+      padding: 2rem 0;
+    }
 
-  .services-content .row {
-    margin: 0 !important;
-    justify-content: center;
-  }
+    .services-content .row {
+      margin: 0 !important;
+      justify-content: center;
+    }
 
-  .column {
-    margin-top: 2rem;
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-  }
+    .column {
+      margin-top: 2rem;
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+    }
 
-  .column:hover {
-    padding-left: 0;
-  }
+    .column:hover {
+      padding-left: 0;
+    }
 
-  .column:hover .card {
-    min-height: auto;
-    padding-bottom: 3rem;
-  }
+    .column:hover .card {
+      min-height: auto;
+      padding-bottom: 3rem;
+    }
 
-  .column:hover .card .txt {
-    margin-left: 0;
-  }
+    .column:hover .card .txt {
+      margin-left: 0;
+    }
 
-  .card {
-    width: 90%;
-    max-width: 300px;
-    min-height: 150px;
-    text-align: center;
-  }
+    .column:hover .card span {
+      opacity: 0;
+      visibility: hidden;
+    }
 
-  .card .txt h1 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
+    .card {
+      width: 90%;
+      max-width: 300px;
+      min-height: 150px;
+      text-align: center;
+    }
 
-  .card .txt p {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    text-align: left;
-  }
+    .card .txt h1 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
 
-  .card span {
-    margin-left: 0;
-    text-align: center;
-    display: block;
-    margin-top: 1rem;
-    position: relative;
-    transform: translateX(-50%);
-    width: fit-content;
-  }
+    .card .txt p {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      text-align: left;
+    }
 
-  .card i {
-    right: -40%;
-    top: 50%;
-    font-size: 8rem;
+    .card span {
+      margin-left: 0;
+      text-align: center;
+      display: block;
+      margin-top: 1rem;
+      position: relative;
+      transform: translateX(-50%);
+      width: fit-content;
+    }
+
+    .card i {
+      right: -40%;
+      top: 50%;
+      font-size: 8rem;
+    }
   }
-}
 </style>
 <!-- End Services -->
 <!-- Portfolio Grid -->
