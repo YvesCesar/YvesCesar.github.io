@@ -296,125 +296,6 @@
   <!-- End Header -->
 
 <!-- Services -->
-  <style>
-    .gr-1, .gr-2, .gr-3 {
-        background: #1f6f8b;
-    }
-
-    * {
-        transition: .5s;
-    }
-
-    .h-100 {
-        height: 100vh !important;
-    }
-
-    .align-middle {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .column {
-        margin-top: 3rem;
-        padding-left: 3rem;
-    }
-
-    .column:hover {
-        padding-left: 0;
-    }
-
-    .column:hover .card .txt {
-        margin-left: 1rem;
-    }
-
-    .column:hover .card .txt h1,
-    .column:hover .card .txt p {
-        color: rgba(255,255,255,1);
-        opacity: 1;
-    }
-
-    .column:hover a {
-        color: rgba(255,255,255,1);
-    }
-
-    .column:hover a:after {
-        width: 10%;
-    }
-
-    .card {
-        min-height: 170px;
-        margin: 0;
-        padding: 1.7rem 1.2rem;
-        border: none;
-        border-radius: 0;
-        color: white;
-        letter-spacing: .05rem;
-        box-shadow: 0 0 21px rgba(0,0,0,.27);
-        border-radius: 10px;
-    }
-
-    .card .txt {
-        z-index: 1;
-    }
-
-    .card .txt h1 {
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-
-    .card .txt p {
-        font-size: 1rem;
-        letter-spacing: 0;
-        margin-top: 33px;
-        opacity: 0;
-        color: rgba(255,255,255,1);
-    }
-
-    .card span {
-        z-index: 3;
-        font-size: .7rem;
-        color: white;
-        margin-left: 1rem;
-        position: relative;
-        bottom: -.5rem;
-        text-transform: uppercase;
-    }
-
-    .card span:after {
-        content: "";
-        display: inline-block;
-        height: 0.5em;
-        width: 0;
-        margin-right: -100%;
-        margin-left: 10px;
-        border-top: 1px solid rgba(255,255,255,1);
-        transition: .5s;
-    }
-
-    .card .ico-card {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    .card i {
-        position: relative;
-        right: -50%;
-        top: 60%;
-        font-size: 12rem;
-        line-height: 0;
-        opacity: .2;
-        color: rgba(255,255,255,1);
-        z-index: 0;
-    }
-  </style>
   <div
     id="services"
     class="page-section services-container"
@@ -469,44 +350,217 @@
   </div>
 
   <style>
-    .services-container {
-      position: relative;
-      min-height: 100vh;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
+  .gr-1, .gr-2, .gr-3 {
+    background: #1f6f8b;
+  }
 
-    .services-content {
-      flex: 1;
-      padding: 4rem 0;
-    }
+  * {
+    transition: .5s;
+  }
 
-    @media (max-width: 575.98px) {
-      .services-content {
-        padding: 0;
-      }
+  .h-100 {
+    height: 100vh !important;
+  }
 
-      .services-content .row {
-        margin: 0 !important;
-      }
-    }
+  .align-middle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-    .bottom-image {
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
+  .column {
+    margin-top: 3rem;
+    padding-left: 3rem;
+  }
 
-    .bottom-image img {
-      width: 100%;
-      display: block;
-    }
-  </style>
+  .column:hover {
+    padding-left: 0;
+  }
+
+  .column:hover .card .txt {
+    margin-left: 1rem;
+  }
+
+  .column:hover .card .txt h1,
+  .column:hover .card .txt p {
+    color: rgba(255,255,255,1);
+    opacity: 1;
+  }
+
+  .column:hover a {
+    color: rgba(255,255,255,1);
+  }
+
+  .column:hover a:after {
+    width: 10%;
+  }
+
+  .card {
+    min-height: 170px;
+    margin: 0;
+    padding: 1.7rem 1.2rem;
+    border: none;
+    border-radius: 0;
+    color: white;
+    letter-spacing: .05rem;
+    box-shadow: 0 0 21px rgba(0,0,0,.27);
+    border-radius: 10px;
+  }
+
+  .card .txt {
+    z-index: 1;
+  }
+
+  .card .txt h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .card .txt p {
+    font-size: 1rem;
+    letter-spacing: 0;
+    margin-top: 33px;
+    opacity: 0;
+    color: rgba(255,255,255,1);
+  }
+
+  .card span {
+    z-index: 3;
+    font-size: .7rem;
+    color: white;
+    margin-left: 1rem;
+    position: relative;
+    bottom: -.5rem;
+    text-transform: uppercase;
+  }
+
+  .card span:after {
+    content: "";
+    display: inline-block;
+    height: 0.5em;
+    width: 0;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 1px solid rgba(255,255,255,1);
+    transition: .5s;
+  }
+
+  .card .ico-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .card i {
+    position: relative;
+    right: -50%;
+    top: 60%;
+    font-size: 12rem;
+    line-height: 0;
+    opacity: .2;
+    color: rgba(255,255,255,1);
+    z-index: 0;
+  }
+
+  .services-container {
+    position: relative;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services-content {
+    flex: 1;
+    padding: 4rem 0;
+  }
+
+  .bottom-image {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .bottom-image img {
+    width: 100%;
+    display: block;
+  }
+
+@media (max-width: 575.98px) {
+  .services-content {
+    padding: 2rem 0;
+  }
+
+  .services-content .row {
+    margin: 0 !important;
+    justify-content: center;
+  }
+
+  .column {
+    margin-top: 2rem;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .column:hover {
+    padding-left: 0;
+  }
+
+  .column:hover .card {
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .column:hover .card .txt {
+    margin-left: 0;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 300px;
+    min-height: 150px;
+    text-align: center;
+  }
+
+  .card .txt h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .card .txt p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .card span {
+    margin-left: 0;
+    text-align: center;
+    display: block;
+    margin-top: 1rem;
+    position: relative;
+    transform: translateX(-50%);
+    width: fit-content;
+  }
+
+  .card i {
+    right: -40%;
+    top: 50%;
+    font-size: 8rem;
+  }
+}
+</style>
 <!-- End Services -->
 <!-- Portfolio Grid -->
 
