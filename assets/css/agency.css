@@ -1021,8 +1021,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 @media (max-width: 991.98px) {
   #about .col-lg-6 .large.text-muted {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-bottom: 4rem;
   }
 }
