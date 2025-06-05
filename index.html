@@ -644,8 +644,8 @@
           <img class="img-fluid" src="assets/img/portfolio/school_attendance_thumbnail.png" alt="">
         </a>
         <div class="portfolio-caption">
-          <h4>Registro de Frequência de Alunos</h4>
-          <p class="text-muted" style="font-style: normal;">Sistema de Registro de Frequência de Alunos com Reconhecimento Facial</p>
+          <h4>Controle de Frequência Automatizado</h4>
+          <p class="text-muted" style="font-style: normal;">Sistema baseado em reconhecimento facial para ambiente escolar</p>
         </div>
       </div>
 	
@@ -675,7 +675,7 @@
         </a>
         <div class="portfolio-caption">
           <h4>Doom rodando no OJS</h4>
-          <p class="text-muted" style="font-style: normal;">Doom rodando no OJS através de um plugin de barra lateral.</p>
+          <p class="text-muted" style="font-style: normal;">Doom rodando no OJS através de um plugin de barra lateral</p>
         </div>
       </div>
 	
@@ -722,7 +722,9 @@
                 src="assets/img/portfolio/ojs_doom_demo.gif"
                 alt="Doom rodando no OJS"
               />
-              <p>Implementação de um plugin de barra lateral para OJS que incorpora e executa o jogo Doom por meio da API JS-DOS.</p>
+              <p>Plugin para Open Journal Systems (OJS). Implementa uma solução de emulação DOS/x86 utilizando JS-DOS v8, permitindo execução do jogo Doom dentro do ambiente de uma revista científica.</p>
+              <p>A solução carrega o jogo dentro de um iframe, isolando o CSS e JS da API do restante do site. Na experiência do jogo, é possível configurar sensibilidade do mouse, tela cheia, volume, etc.</p>
+              <p>Foi um desafio técnico pessoal, sendo gamer e trabalhando com plugins, fiz minha homenagem ao movimento "It Runs Doom". Por fim, também publiquei um vídeo sobre o projeto no TikTok.</p>
               <div class="separator"></div>
               <p class="final-text">Confira os materiais complementares relacionados ao projeto.</p>
               <a
@@ -785,8 +787,8 @@
                 src="assets/img/portfolio/epub_viewer_demo.gif"
                 alt="Plugin que permite a visualização de arquivos EPUB no OJS"
               />
-              <p>Esse plugin adiciona a possibilidade de usuários visualizarem publicações no formato EPUB no OJS, OPS e OMP. O plugin utiliza a biblioteca Bibi para renderizar o arquivo no navegador.</p>
-
+              <p>Plugin que habilita visualização nativa de publicações EPUB diretamente no navegador, integrando-se ao ecossistema PKP (OJS, OPS e OMP). Utiliza a biblioteca JavaScript Bibi para renderização e controles de navegação.</p>
+              <p>A solução implementa arquitetura de hooks em PHP, interceptando callbacks de visualização de arquivos e injetando um template personalizado que carrega o leitor EPUB com visualização paginada, eventos de navegação, etc.</p>
               <p>O plugin está disponível na galeria oficial da PKP.</p>
               <div class="separator"></div>
               <p class="final-text">Confira os materiais complementares relacionados ao projeto.</p>
@@ -850,7 +852,9 @@
                 src="assets/img/portfolio/morada_dos_pets_demo.gif"
                 alt="Site Morada dos Pets"
               />
-              <p>Um projeto sobre um empreendimento que oferece serviços de hospedagem e cuidados para cachorros. O projeto teve origem acadêmica no curso de Design na UFAM, e foi idealizado e projetado visualmente no Figma pela Yamille Santos. Então, iniciamos o desenvolvimento desse projeto em um site.</p>
+              <p>Um projeto sobre um empreendimento que oferece serviços de hospedagem e cuidados para cachorros. Teve origem acadêmica no curso de Design na UFAM, idealizado e projetado visualmente no Figma pela Yamille Santos. A partir do design, estamos desenvolvendo uma aplicação web completa como case de estudos.</p>
+              <p>O objetivo de implementação das funcionalidades é para que um usuário possa contratar serviços para seus pets utilizando algum meio de pagamento, com autenticação e interface responsiva. Além de, do lado do administrador, poder gerenciar clientes e visualizar métricas em gráficos e estatísticas. Estou utilizando Ruby on Rails como framework, TailwindCSS para estilização e PostgreSQL como banco de dados, além de ter um deploy automatizado com CI/CD.</p>
+              <p>Este projeto representa a aplicação prática de conceitos de desenvolvimento full-stack, desde a interpretação de designs até a implementação de features complexas e deploy em produção.</p>
               <div class="separator"></div>
               <p class="final-text">Confira os materiais complementares relacionados ao projeto.</p>
               <a
@@ -919,11 +923,11 @@
                 src="assets/img/portfolio/oa_switchboard_demo.gif"
                 alt="Plugin para envio de mensagens P1-PIO para o OA Switchboard"
               />
-              <p>Plugin que permite que periódicos OJS enviem automaticamente mensagens do tipo P1-PIO para a dashboard do Open Access Switchboard no momento da publicação de um artigo.</p>
+              <p>Plugin que permite integração entre periódicos OJS e o Open Access Switchboard, enviando automaticamente mensagens P1-PIO no momento da publicação de artigos. Esta solução facilita o compartilhamento de metadados com instituições financiadoras.</p>
 
-              <p>A integração armazena as credenciais da API do OA Switchboard no OJS (com criptografia), e as utiliza para autenticar e enviar a mensagem P1, contendo os dados do artigo, periódico, financiadores e outras informações relevantes.</p>
+              <p>O plugin implementa autenticação segura com criptografia de credenciais, transmissão automatizada de dados essenciais (artigo, periódico, financiadores) via API. Desenvolvido seguindo a prática TDD com testes automatizados em PHPUnit e de interface com Cypress.</p>
 
-              <p>O plugin está disponível na galerial oficial da PKP.</p>
+              <p>Disponível na galeria oficial da PKP, o plugin já beneficia editores acadêmicos mundialmente.</p>
               <div class="separator"></div>
               <p class="final-text">Confira os materiais complementares relacionados ao projeto.</p>
               <a
@@ -998,9 +1002,11 @@
                 src="assets/img/portfolio/review_reminder_demo.gif"
                 alt="Plugin OJS para envio de lembretes de período de avaliação"
               />
-              <p>Desenvolvemos um plugin para OJS que envia um lembrete para o endereço de e-mail do avaliador quando ele é designado para uma submissão. O lembrete o informa sobre o período de avaliação, que pode ser adicionado aos principais calendários digitais.</p>
+              <p>Desenvolvemos um plugin para OJS que automatiza o processo de lembretes de revisão por pares, integrando-se nativamente ao fluxo editorial da plataforma. A solução gera automaticamente arquivos ICS compatíveis com os principais calendários digitais (Google Calendar, Outlook, Apple Calendar), incluindo URLs de acesso direto e seguro para revisores.</p>
 
-              <p>O plugin está disponível na galeria oficial da PKP.</p>
+              <p>Foi utilizado práticas de desenvolvimento como Test-Driven Development (TDD) com PHPUnit para testes de unidade e Cypress para testes end-to-end automatizados.</p>
+
+              <p>Desenvolvido para a South African Medical Association e disponível na galeria oficial da PKP.</p>
               <div class="separator"></div>
               <p class="final-text">Confira os materiais complementares relacionados ao projeto.</p>
               <a
@@ -1038,7 +1044,7 @@
           <div class="col-lg-8 mx-auto">
             <div class="modal-body">
               <!-- Project Details Go Here -->
-              <h2 class="text-uppercase">Registro de Frequência de Alunos</h2>
+              <h2 class="text-uppercase">Controle de Frequência Automatizado</h2>
               <p>
                 <ul class="list-inline">
                   <li>Junho, 2022 - Outubro, 2022</li>
@@ -1054,9 +1060,11 @@
               <img
                 class="img-fluid d-block mx-auto"
                 src="assets/img/portfolio/students_attendance_system_demo.png"
-                alt="Projeto de TCC sobre um sistema de registro de frequência de alunos com reconhecimento facial."
+                alt="Sistema de presença inteligente com reconhecimento facial para ambiente escolar"
               />
-              <p>Projeto de TCC que fizemos com base em uma pesquisa com professores em Manaus, identificando suas necessidades e dificuldades no registro manual de frequência de alunos. Nossa proposta de solução foi um sistema que registra a frequência dos alunos com reconhecimento facial. No caso de ausência de alunos, o próprio sistema notifica os pais ou responsáveis.</p>
+              <p>Sistema full-stack desenvolvido em Ruby on Rails para controle de frequência escolar através de reconhecimento facial com OpenCV e Python. Originou-se de pesquisa científica conduzida com professores em Manaus/AM, identificando ineficiências no registro manual de presença.</p>
+              <p>A solução integra visão computacional (OpenCV + Dlib) com automação de notificações via e-mail para responsáveis, com arquitetura MVC e PostgreSQL na base de dados, possui cobertura de testes de unidade e integração com RSpec. O sistema processa imagens em tempo real, identifica estudantes automaticamente e dispara notificações em caso de ausências.</p>
+              <p>O artigo científico foi publicado no ITEGAM-JETIA.</p>
               <div class="separator"></div>
               <p class="final-text">Confira os materiais complementares relacionados ao projeto.</p>
               <a
