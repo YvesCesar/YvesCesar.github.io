@@ -140,9 +140,29 @@
       }, 500);
     }
 
+    const initScrollAnimations = () => {
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      const animateElements = document.querySelectorAll('.scroll-animate, .card-animate, .timeline-animate, .portfolio-animate');
+      animateElements.forEach(el => observer.observe(el));
+    };
+
     window.addEventListener("load", () => {
       preloader();
       typeWrite();
+      initScrollAnimations();
     });
   </script>
 </head>
@@ -304,10 +324,10 @@
     <div class="container services-content">
       <div class="row">
         <div class="col-lg-12 text-center pb-5">
-          <h2 class="section-heading text-uppercase text-white">Serviços</h2>
+          <h2 class="section-heading text-uppercase text-white scroll-animate fade-in-up">Serviços</h2>
         </div>
         <div class="col-md-6 col-lg-4 column">
-          <div class="card gr-1">
+          <div class="card gr-1 card-animate">
             <div class="txt">
               <h1>Aplicações Web</h1>
               <p>Criação de sites, serviços web (APIs, bibliotecas), frontend responsivo, mobile e integrações com aplicações externas.</p>
@@ -319,7 +339,7 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-4 column">
-          <div class="card gr-2">
+          <div class="card gr-2 card-animate">
             <div class="txt">
               <h1>Automatização <br>de processos</h1>
               <p>Ambientes de desenvolvimento, testes de unidade e integração, CI/CD para GitHub e GitLab.</p>
@@ -331,7 +351,7 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-4 column">
-          <div class="card gr-3">
+          <div class="card gr-3 card-animate">
             <div class="txt">
               <h1>Plugins OJS/OPS/OMP</h1>
               <p>Desenvolvimento de plugins para aplicações PKP, utilizadas em instituições acadêmicas no mundo todo.</p>
@@ -584,12 +604,12 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase"><p>Portfólio</p></h2>
-        <h3 class="section-subheading text-muted" style="font-style: normal;"><p>Alguns dos projetos que estou envolvido</p></h3>
+        <h2 class="section-heading text-uppercase scroll-animate fade-in-up"><p>Portfólio</p></h2>
+        <h3 class="section-subheading text-muted scroll-animate fade-in-up" style="font-style: normal;"><p>Alguns dos projetos que estou envolvido</p></h3>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 col-sm-6 portfolio-item">
+      <div class="col-md-4 col-sm-6 portfolio-item portfolio-animate">
         <a class="portfolio-link" data-toggle="modal" href="#p3">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
@@ -604,7 +624,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6 portfolio-item">
+      <div class="col-md-4 col-sm-6 portfolio-item portfolio-animate">
         <a class="portfolio-link" data-toggle="modal" href="#p4">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
@@ -619,7 +639,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6 portfolio-item">
+      <div class="col-md-4 col-sm-6 portfolio-item portfolio-animate">
         <a class="portfolio-link" data-toggle="modal" href="#p2">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
@@ -634,7 +654,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6 portfolio-item">
+      <div class="col-md-4 col-sm-6 portfolio-item portfolio-animate">
         <a class="portfolio-link" data-toggle="modal" href="#p6">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
@@ -649,7 +669,7 @@
         </div>
       </div>
 	
-      <div class="col-md-4 col-sm-6 portfolio-item">
+      <div class="col-md-4 col-sm-6 portfolio-item portfolio-animate">
         <a class="portfolio-link" data-toggle="modal" href="#p5">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
@@ -664,7 +684,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6 portfolio-item">
+      <div class="col-md-4 col-sm-6 portfolio-item portfolio-animate">
         <a class="portfolio-link" data-toggle="modal" href="#p1">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
@@ -1097,7 +1117,7 @@
   <section class="py-5" id="clients">
     <div class="container">
       <div class="text-center">
-        <h2 class="section-heading text-uppercase mb-5"><p>Marcas com as quais já contribuí</p></h2>
+        <h2 class="section-heading text-uppercase mb-5 scroll-animate fade-in-up"><p>Marcas com as quais já contribuí</p></h2>
       </div>
       <style>
         .client-logo {
@@ -1133,43 +1153,43 @@
         }
       </style>
       <div class="row">
-        <div class="col-md-3 col-sm-6 col-12 m-auto pb-5">
+        <div class="col-md-3 col-sm-6 col-12 m-auto pb-5 scroll-animate scale-up">
           <a href="https://www.scielo.br/" target="_blank">
             <img class="img-fluid d-block mx-auto client-logo" src="assets/img/clients/scielo_logo.png" alt="SciELO Brasil">
           </a>
         </div>
         
-        <div class="col-md-3 col-sm-6 col-12 m-auto pb-5">
+        <div class="col-md-3 col-sm-6 col-12 m-auto pb-5 scroll-animate scale-up">
           <a href="https://publicacoesup.petrobras.com.br/peld/index" target="_blank">
             <img class="img-fluid d-block mx-auto client-logo" src="assets/img/clients/petrobras_logo.svg.png" alt="Petrobras">
           </a>
         </div>
         
-        <div class="col-md-3 col-sm-6 col-12 m-auto pb-5">
+        <div class="col-md-3 col-sm-6 col-12 m-auto pb-5 scroll-animate scale-up">
           <a href="https://samedical.org/" target="_blank">
             <img class="img-fluid d-block mx-auto client-logo" src="assets/img/clients/assaf_logo.png" alt="South African Medical Association">
           </a>
         </div>
         
-        <div class="col-md-3 col-sm-6 col-12 m-auto pb-5">
+        <div class="col-md-3 col-sm-6 col-12 m-auto pb-5 scroll-animate scale-up">
           <a href="https://www.oaswitchboard.org/" target="_blank">
             <img class="img-fluid d-block mx-auto client-logo" src="assets/img/clients/oa_switchboard_logo.png" alt="OA Switchboard">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 col-12 m-auto pb-5">
+        <div class="col-md-3 col-sm-6 col-12 m-auto pb-5 scroll-animate scale-up">
           <a href="https://pkp.sfu.ca/" target="_blank">
             <img class="img-fluid d-block mx-auto client-logo" src="assets/img/clients/pkp_logo.svg" alt="Public Knowledge Project">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 col-12 m-auto pb-5">
+        <div class="col-md-3 col-sm-6 col-12 m-auto pb-5 scroll-animate scale-up">
           <a href="https://periodicos.fgv.br/index" target="_blank">
             <img class="img-fluid d-block mx-auto client-logo" src="assets/img/clients/fgv_logo.png" alt="FGV">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 col-12 m-auto pb-5">
+        <div class="col-md-3 col-sm-6 col-12 m-auto pb-5 scroll-animate scale-up">
           <a href="https://periodicos.unifesp.br/index.php/index/index" target="_blank">
             <img class="img-fluid d-block mx-auto client-logo" src="assets/img/clients/unifesp_logo.png" alt="UNIFESP">
           </a>
@@ -1183,13 +1203,13 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center mb-5">
-          <h2 class="section-heading text-uppercase"><p>Experiências</p></h2>
+          <h2 class="section-heading text-uppercase scroll-animate fade-in-up"><p>Experiências</p></h2>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12">
           <ul class="timeline">
-                <li>
+              <li>
               <div class="timeline-image align-content-center">
                 <img class="rounded-circle img-fluid" src="assets/img/timeline/lepidus_tecnologia_logo.png" alt="">
               </div>
@@ -1269,11 +1289,11 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center pb-5">
-        <h2 class="section-heading text-uppercase">Sobre mim</h2>
+        <h2 class="section-heading text-uppercase scroll-animate fade-in-up">Sobre mim</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6 scroll-animate fade-in-left">
         <div class="large text-muted">
           <p>
             O interesse por jogos digitais me motivou a conhecer o mundo da programação, onde, em 2014, fiz o meu primeiro curso de Lógica de Programação e Algoritmos. Iniciei minha trajetória profissional em 2020 e, em 2022, tornei-me bacharel em Ciência da Computação.
@@ -1290,7 +1310,7 @@
           </h5>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 scroll-animate fade-in-right">
         <div>
           <div id="aboutMeCarousel" class="carousel slide" data-ride="carousel" style="height: 30rem; width: 25rem; margin: auto;">
             <div class="carousel-inner" >
