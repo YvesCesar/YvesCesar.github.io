@@ -1212,3 +1212,156 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     transform: none;
   }
 }
+.error-404-image {
+  max-width: 500px;
+  max-height: 400px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.error-404-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0 60px 0;
+}
+
+.error-404-content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-404-heading {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #212529;
+}
+
+.error-404-subheading {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #6c757d;
+}
+
+.error-404-button {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.error-404-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(31, 111, 139, 0.3);
+}
+
+@media (max-width: 991.98px) {
+  .error-404-image {
+    max-width: 400px;
+    max-height: 320px;
+  }
+  
+  .error-404-heading {
+    font-size: 2.5rem;
+  }
+  
+  .error-404-subheading {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .error-404-section {
+    padding: 100px 0 40px 0;
+  }
+  
+  .error-404-image {
+    max-width: 350px;
+    max-height: 280px;
+  }
+  
+  .error-404-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .error-404-subheading {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .error-404-content {
+    padding: 1.5rem;
+  }
+  
+  .error-404-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .error-404-section {
+    padding: 80px 0 30px 0;
+    min-height: 90vh;
+  }
+  
+  .error-404-image {
+    max-width: 300px;
+    max-height: 240px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .error-404-heading {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+  
+  .error-404-subheading {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .error-404-content {
+    padding: 1rem;
+  }
+  
+  .error-404-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 375px) {
+  .error-404-image {
+    max-width: 250px;
+    max-height: 200px;
+  }
+  
+  .error-404-heading {
+    font-size: 1.5rem;
+  }
+  
+  .error-404-subheading {
+    font-size: 0.9rem;
+  }
+  
+  .error-404-button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .error-404-heading {
+    color: #f8f9fa;
+  }
+  
+  .error-404-subheading {
+    color: #adb5bd;
+  }
+}
