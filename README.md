@@ -32,6 +32,15 @@ bundle exec jekyll serve
    - Abra seu navegador em: `http://localhost:4000`
    - O site será recarregado automaticamente quando você fizer alterações
 
+# Em desenvolvimento
+
+O projeto está em uma versão preliminar, e como próximos passos temos as seguintes pendências:
+
+- Mover estilizações do HTML para o arquivo CSS
+- Mover scripts do HTML para o arquivo JS
+- Dividir as estilizações por responsabilidades, criando pequenos arquivos CSS com propósitos específicos
+- Criar Dockerfile do projeto
+
 ## Créditos
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
